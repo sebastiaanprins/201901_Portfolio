@@ -1,0 +1,46 @@
+/* SECTION BORDERS */
+/* header {border: solid black;}
+.navbar {border: solid yellow;}
+.navbar ul {border: solid blue;}
+.content {border: solid green;} */
+
+body {
+    background-color: rgb(160, 185, 193);
+}
+
+/* HEADER / NAVBAR */
+header {
+    margin-left: 20%;
+    font-size: 3em;
+}
+.navbar {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-align: right;
+    font-size: 1.7em;
+}
+.navbar li {
+    margin-bottom: 1em;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    /* color: rgb(133, 13, 13); */
+    color: rgb(255, 255, 255);
+}
+
+/* ////// CONTENT STYLING */
+.content {
+    margin-left: 180px;
+    position: relative;
+    padding: 2em 3em;
+}
+
