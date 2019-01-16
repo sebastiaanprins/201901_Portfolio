@@ -1,46 +1,144 @@
 /* SECTION BORDERS */
-/* header {border: solid black;}
-.navbar {border: solid yellow;}
-.navbar ul {border: solid blue;}
-.content {border: solid green;} */
+/* header {border: solid blue;}
+.navBar {border: solid yellow;}
+.navBar ul {border: solid blue;}
+.navBar li a {border: solid goldenrod;}
+#productBarPlate {border: solid rgb(217, 29, 227);}
+#productBar {border: solid blue;} */
+.grid-container {border: solid rgb(217, 255, 0);}
+/* .gridItem1 {border: solid green;}
+.gridItem2 {border: solid red;} */
+/* footer {border: solid rgb(217, 29, 227);} */
+/* @media screen {} */
 
+/*//////////////////  HOME  /////////////////////*/
 body {
-    background-color: rgb(160, 185, 193);
+    background-image: url("bground_v1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* HEADER / NAVBAR */
 header {
-    margin-left: 20%;
+    margin-left: 162px;
+    height: 60px;
+    width: 60%;
+    text-align: center;
     font-size: 3em;
-}
-.navbar {
-    height: 100%;
-    width: 180px;
     position: fixed;
+    color: whitesmoke;
+    background-color: rgba(97, 19, 19, 0.5);
+}
+/* NAVIGATION //////////////////////// */
+.navBar {
+    background-color: rgba(97, 19, 19, 0.5);
+    min-height: 90%;
+    width: 120px;
+    padding-top: 3em;
+    position: fixed;
+    color: whitesmoke;
 }
 
-.navbar ul {
+.navBar ul {
     list-style-type: none;
+    margin-right: 0.2em;
     text-align: right;
     font-size: 1.7em;
 }
-.navbar li {
-    margin-bottom: 1em;
-}
 
-.navbar li a {
+.navBar li a {
     text-decoration: none;
+    color: whitesmoke;
 }
 
-.navbar a:hover {
-    /* color: rgb(133, 13, 13); */
-    color: rgb(255, 255, 255);
+.navBar a:hover {
+    color: red;
+    font-weight: bold;
 }
 
-/* ////// CONTENT STYLING */
-.content {
-    margin-left: 180px;
-    position: relative;
-    padding: 2em 3em;
+#productBarPlate {
+    background-color: rgba(97, 19, 19, 0.5);
+    min-height: 50%;
+    width: 80px;
+    margin-top: 15vh;
+    float: right;
+    position: fixed;
+    right: 0;
+}
+
+#productBar {
+    list-style-position: outside;
+    padding: 20% 0 20%;
+}
+
+#productBar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#productBar li {
+    margin: 20px 0;
+}
+
+#productBar li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.1em;
+}
+
+#productBar a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+/* CONTENT STYLING //////////////////////// */
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 3fr 8fr;
+    column-gap: 15px;
+    margin: 80px 80px auto 141px;
+}
+
+.gridItem1 {
+                /* min-height: 100vh; */
+    padding: 2em 0.5em 1em 21px;
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+.gridItem2 {
+                /* min-height: 100vh; */
+    padding: 2em 0.5em 0.5em;
+    color: whitesmoke;
+    font-size: 1.2em;
+}
+
+/*///////////////////////////////////////////////*/
+/* footer {
+    margin: 90% 80px 0.5em 120px;
+    padding: 0 5% 0.5em;
+    color: whitesmoke;
+    font-size: 1em;
+} */
+/*///////////////////////////////////////////////*/
+/* #productBar a img.opacity {
+    opacity: 0.5;
+    filter: alpha(opacity=100); IE8 and lower
+    zoom: 1; Triggers "hasLayout" in IE 7 and lower
+  }
+   .opacity:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=50);
+    zoom: 1;
+  } */
+/*///////////////////////////////////////////////*/
+
+/*//////////////////  PLM  //////////////////////*/
+/* SECTION BORDERS */
+.PLM_grid-container {border: solid rgb(217, 255, 0);}
+
+/* CONTENT STYLING //////////////////////// */
+.PLM_grid-container {
+    display: inline-grid;
+    margin: 80px 80px auto 141px;
 }
 
