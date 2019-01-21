@@ -5,9 +5,14 @@
 .navBar li a {border: solid goldenrod;}
 #productBarPlate {border: solid rgb(217, 29, 227);}
 #productBar {border: solid blue;} */
-.grid-container {border: solid rgb(217, 255, 0);}
-/* .gridItem1 {border: solid green;}
-.gridItem2 {border: solid red;} */
+.gridContainer {border: solid rgb(217, 255, 0);}
+.gridBox1 {border: solid green;}
+.contentHeaderLeft {border: solid blue}
+.box1-1 {border: solid purple}
+.gridBox2 {border: solid red;}
+.contentHeaderRight {border: solid blue}
+.box2-1a {border: solid purple}
+.box2-1b {border: solid purple}
 /* footer {border: solid rgb(217, 29, 227);} */
 /* @media screen {} */
 
@@ -89,28 +94,59 @@ header {
     color: red;
     font-weight: bold;
 }
-
 /* CONTENT STYLING //////////////////////// */
-.grid-container {
+.gridContainer { /*yellow*/
     display: inline-grid;
     grid-template-columns: 3fr 8fr;
-    column-gap: 15px;
-    margin: 80px 80px auto 141px;
+    column-gap: 35px;
+    width: 80%;
+    margin: 80px auto auto 141px;
 }
-
-.gridItem1 {
-                /* min-height: 100vh; */
+.gridBox1 { /*green*/
+        /* min-height: 100vh; */
+    display: inline-grid;
     padding: 2em 0.5em 1em 21px;
     color: whitesmoke;
     font-size: 1.2em;
 }
+.contentHeaderLeft { /*blue*/
+    /* padding-bottom: 3em; */
+    color: blue;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
 
-.gridItem2 {
-                /* min-height: 100vh; */
+}
+.box1-1 {
+    
+}
+.gridBox2 { /*red*/
+        /* min-height: 100vh; */
+        display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
     padding: 2em 0.5em 0.5em;
     color: whitesmoke;
     font-size: 1.2em;
 }
+.contentHeaderRight { /*blue*/
+    grid-column: 2 span;
+    height: auto;
+    color: blue;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    /* padding-left: 15%; */
+}
+
+.box2-1a {
+
+}
+.box2-1b {
+    /* grid-row: row 1; */
+}
+
+
 
 /*///////////////////////////////////////////////*/
 /* footer {
@@ -133,12 +169,9 @@ header {
 /*///////////////////////////////////////////////*/
 
 /*//////////////////  PLM  //////////////////////*/
-/* SECTION BORDERS */
-.PLM_grid-container {border: solid rgb(217, 255, 0);}
-
-/* CONTENT STYLING //////////////////////// */
-.PLM_grid-container {
+/* .PLM_grid-container {
     display: inline-grid;
     margin: 80px 80px auto 141px;
-}
+    border: solid rgb(217, 255, 0);} */
+/*//////////////////  END PLM  //////////////////*/
 
