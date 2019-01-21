@@ -5,14 +5,14 @@
 .navBar li a {border: solid goldenrod;}
 #productBarPlate {border: solid rgb(217, 29, 227);}
 #productBar {border: solid blue;} */
-.gridContainer {border: solid rgb(217, 255, 0);}
+/* .gridContainer {border: solid rgb(217, 255, 0);}
 .gridBox1 {border: solid green;}
 .contentHeaderLeft {border: solid blue}
 .box1-1 {border: solid purple}
 .gridBox2 {border: solid red;}
 .contentHeaderRight {border: solid blue}
 .box2-1a {border: solid purple}
-.box2-1b {border: solid purple}
+.box2-1b {border: solid purple} */
 /* footer {border: solid rgb(217, 29, 227);} */
 /* @media screen {} */
 
@@ -22,46 +22,42 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
-
 header {
     margin-left: 162px;
     height: 60px;
     width: 60%;
     text-align: center;
+    font-family: "Lucida Console", Monaco, monospace;
     font-size: 3em;
     position: fixed;
     color: whitesmoke;
-    background-color: rgba(97, 19, 19, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 /* NAVIGATION //////////////////////// */
 .navBar {
-    background-color: rgba(97, 19, 19, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     min-height: 90%;
     width: 120px;
     padding-top: 3em;
     position: fixed;
     color: whitesmoke;
 }
-
 .navBar ul {
     list-style-type: none;
     margin-right: 0.2em;
     text-align: right;
     font-size: 1.7em;
 }
-
 .navBar li a {
     text-decoration: none;
     color: whitesmoke;
 }
-
 .navBar a:hover {
     color: red;
     font-weight: bold;
 }
-
 #productBarPlate {
-    background-color: rgba(97, 19, 19, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     min-height: 50%;
     width: 80px;
     margin-top: 15vh;
@@ -69,27 +65,22 @@ header {
     position: fixed;
     right: 0;
 }
-
 #productBar {
     list-style-position: outside;
     padding: 20% 0 20%;
 }
-
 #productBar ul {
     list-style-type: none;
     padding: 0;
 }
-
 #productBar li {
     margin: 20px 0;
 }
-
 #productBar li a {
     text-decoration: none;
     color: whitesmoke;
     font-size: 1.1em;
 }
-
 #productBar a:hover {
     color: red;
     font-weight: bold;
@@ -105,47 +96,68 @@ header {
 .gridBox1 { /*green*/
         /* min-height: 100vh; */
     display: inline-grid;
-    padding: 2em 0.5em 1em 21px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    padding: 2em 0.5em 0em 21px;
     color: whitesmoke;
     font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .contentHeaderLeft { /*blue*/
-    /* padding-bottom: 3em; */
-    color: blue;
+    padding: 0.4em 0.4em 1.1em 0.4em;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: whitesmoke;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-
 }
-.box1-1 {
-    
+.box1 {
+    margin-top: 1em;
+    font-size: 0.8em;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+.productContent {
+    font-size: 1.2em;
 }
 .gridBox2 { /*red*/
         /* min-height: 100vh; */
-        display: inline-grid;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
-    padding: 2em 0.5em 0.5em;
+    column-gap: 5%;
+    padding: 2em 0.5em 0em 21px;
     color: whitesmoke;
     font-size: 1.2em;
 }
 .contentHeaderRight { /*blue*/
     grid-column: 2 span;
-    height: auto;
-    color: blue;
+    padding: 0.4em;
+    font-family: "Lucida Console", Monaco, monospace;
+    color: whitesmoke;
     text-align: center;
     font-size: 2em;
     font-weight: bold;
-    /* padding-left: 15%; */
+    background-color: rgba(0, 0, 0, 0.6);
 }
-
-.box2-1a {
-
+.box2 {
+    margin-top: 1em;
+    padding-bottom: 1em;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-family: "Lucida Console", Monaco, monospace;
 }
-.box2-1b {
-    /* grid-row: row 1; */
+.box2Header {
+    font-size: 1.3em;
 }
-
+.box2>img {
+    /* object-fit: cover; */
+    width: 100%;
+    height: auto;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+.productThumb:hover {
+    opacity: 0.5;
+}
 
 
 /*///////////////////////////////////////////////*/
